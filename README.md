@@ -15,6 +15,9 @@
 * preset-env
 * node_mdules
 
+### Plugins
+* @babel/plugin-proposal-object-rest-spread
+
 ### Rodando
 * `$ yarn dev` 
 
