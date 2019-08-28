@@ -90,23 +90,10 @@
 /*!****************!*\
   !*** ./app.js ***!
   \****************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello */ \"./hello.js\");\n\nconsole.log(Object(_hello__WEBPACK_IMPORTED_MODULE_0__[\"ola\"])());\nconsole.log(Object(_hello__WEBPACK_IMPORTED_MODULE_0__[\"ola\"])('Rovian Vieceli'));\n\n//# sourceURL=webpack:///./app.js?");
-
-/***/ }),
-
-/***/ "./hello.js":
-/*!******************!*\
-  !*** ./hello.js ***!
-  \******************/
-/*! exports provided: ola */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ola\", function() { return ola; });\nfunction ola() {\n  var str = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'qual seu nome?';\n  return \"Ol\\xE1, \".concat(str);\n}\n;\n\n//# sourceURL=webpack:///./hello.js?");
+eval("alert('Star Webpack');\n\n//# sourceURL=webpack:///./app.js?");
 
 /***/ })
 
