@@ -1,1 +1,1 @@
-alert('Run in Dev Mode');
+alert('Tente Fazer os Desafios :)');
