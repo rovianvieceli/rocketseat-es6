@@ -94,19 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello */ \"./hello.js\");\n\nconsole.log(Object(_hello__WEBPACK_IMPORTED_MODULE_0__[\"ola\"])());\nconsole.log(Object(_hello__WEBPACK_IMPORTED_MODULE_0__[\"ola\"])('Rovian Vieceli'));\n\n//# sourceURL=webpack:///./app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./functions.js\");\n/* Apenas descomente o exemplo que desejar ver */\n\n/**\r\n * Exemplo 1: Import de funções\r\n */\n\nconsole.log(Object(_functions__WEBPACK_IMPORTED_MODULE_0__[\"soma\"])(1, 2));\nconsole.log(Object(_functions__WEBPACK_IMPORTED_MODULE_0__[\"subtrair\"])(2, 1));\n/**\r\n * Exemplo 2: Import do export default mantendo o nome da função\r\n */\n// import soma from './soma';\n// console.log(soma(1, 2));\n\n/**\r\n * Exemplo 3: Import do export default qualquer nome para a função\r\n */\n// import somaFunction from './soma';\n// console.log(somaFunction(1, 2));\n\n/**\r\n * Exemplo 4: Import de função atribuindo apelido\r\n */\n// import { soma as somaFn } from './functions';\n// console.log(somaFn(1, 2));\n\n/**\r\n * Exemplo 5: Import de função default e outras\r\n */\n// import times, { soma, subtrair } from './functions';\n// console.log(times(2, 2));\n// console.log(soma(1, 2));\n// console.log(subtrair(2, 1));\n\n/**\r\n * Exemplo 6: Import de função todas as funções\r\n */\n// import * as fx from './functions';\n// console.log(fx.default(2, 2));\n// console.log(fx.soma(1, 2));\n// console.log(fx.subtrair(2, 1));\n// console.log(fx.divide(2, 1));\n\n//# sourceURL=webpack:///./app.js?");
 
 /***/ }),
 
-/***/ "./hello.js":
-/*!******************!*\
-  !*** ./hello.js ***!
-  \******************/
-/*! exports provided: ola */
+/***/ "./functions.js":
+/*!**********************!*\
+  !*** ./functions.js ***!
+  \**********************/
+/*! exports provided: default, soma, subtrair, divide */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ola\", function() { return ola; });\nfunction ola() {\n  var str = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'qual seu nome?';\n  return \"Ol\\xE1, \".concat(str);\n}\n;\n\n//# sourceURL=webpack:///./hello.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return times; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"soma\", function() { return soma; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"subtrair\", function() { return subtrair; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"divide\", function() { return divide; });\nfunction times(a, b) {\n  return a * b;\n}\nfunction soma(a, b) {\n  return a + b;\n}\n;\nfunction subtrair(a, b) {\n  return a - b;\n}\nfunction divide(a, b) {\n  return a / b;\n}\n\n//# sourceURL=webpack:///./functions.js?");
 
 /***/ })
 
