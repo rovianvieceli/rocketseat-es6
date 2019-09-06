@@ -23,7 +23,7 @@ class App {
             let loading = document.createElement('span');
             loading.appendChild(document.createTextNode('Carregando...'));
             loading.setAttribute('id', 'loading');
-            document.body.appendChild(loading);
+            this.form.appendChild(loading);
         } else {
             document.getElementById('loading').remove();
         }
@@ -39,6 +39,7 @@ class App {
         try {
             let response = await api.get(`/repos/${input}`);
             let { name, description, html_url, owner: { avatar_url } } = response.data;
+
             this.input.value = '';
             this.repositories.push({ name, description, html_url, avatar_url });
             this.render();
